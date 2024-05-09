@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonRed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Image 1"
+        android:textAllCaps="false"
+        android:background="@drawable/greybtn"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/ic_red_icon"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="onRedButtonClick"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonGreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Image 2"
+        android:background="@drawable/dbluebtn"
+        android:textAllCaps="false"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/ic_red_icon"
+        android:layout_below="@id/buttonRed"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="onGreenButtonClick"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Image 3"
+        android:background="@drawable/whitebtn"
+        android:drawableLeft="@drawable/ic_red_icon"
+        android:textAllCaps="false"
+        android:padding="5dp"
+
+        android:layout_below="@id/buttonGreen"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="onBlueButtonClick"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:src="@mipmap/ic_launcher"
+        android:scaleType="centerCrop"
+        android:layout_below="@id/buttonBlue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+</RelativeLayout>
